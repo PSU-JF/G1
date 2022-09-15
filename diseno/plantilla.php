@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <!--conecta a bootstrap-->
     <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<!--Icono_encabezado-->
+	<link rel="icon" type="image/jpg" href="img\icono_encabezado.png">
 </head>
 <body>
 	<header id="logo">
