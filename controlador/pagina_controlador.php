@@ -4,7 +4,7 @@
 	{
 		function home()
 		{
-			require_once("paginas/index.php" /*linkeado */);
+			require_once("paginas/index.php" );
 		}
 
 	}//fin clase diseño

@@ -1,8 +1,4 @@
-:root {
-    --primary: orange;
-    --light: white;
-    --dark: black;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +18,19 @@ nav {
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: var(--dark);
+    background-color: black;
     padding: 16px 32px;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 3px solid orange;
 }
+
+h1 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 .hamburguer {
     display: block;
     position: relative;
@@ -43,16 +48,35 @@ nav {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background-color: var(--light);
+    background-color: white;
     border-radius: 6px;
     z-index: 1;
     transform-origin: 0 0;
     transition: 0.4s;
 }
 
-.hamburguer:hover span:inth-child(2) {
-
+.hamburguer:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: orange;
 }
+
+.hamburguer.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburguer.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburguer.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburguer.is-active:hover span {
+    background-color: orange;
+}
+
 .menu {
     display: none;
 }

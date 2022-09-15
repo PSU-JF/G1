@@ -26,5 +26,6 @@
 	<footer id="pie">
 		<?php include("diseno/footer.php"); ?>
 	</footer>
+	<script src="main.js"></script>
 </body>
 </html>
