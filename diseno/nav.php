@@ -1,6 +1,6 @@
 <nav class="navbarPizza">
     <div class="contenedor">
-        <h1>Pizzeria D'Albert</h1>
+        <img src="img/banner.png" alt="" style="width: 250px; height: 90px;">
         <div class="menu">
             <a href="#" class="is-active">Inicio</a>
             <a href="#">Productos</a>
