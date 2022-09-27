@@ -3,10 +3,10 @@
         <img src="img/banner.png" alt="" style="width: 250px; height: 90px;">
         <div class="menu">
             <a href="#" class="is-active">Inicio</a>
-            <a href="#">Productos</a>
+            <a href="pagina/producto.html">Productos</a>
             <a href="#">Contacto</a>
             <a href="#">Conocenos</a>
-            <a href="#">Iniciar Sesion</a>
+            <a href="pagina/login.php">Iniciar Sesion</a>
         </div>
         <button class="hamburguer">
             <span></span>
