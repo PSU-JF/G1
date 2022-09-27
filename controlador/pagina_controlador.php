@@ -11,6 +11,10 @@
 		{
 			require_once("paginas/login.php");
 		}
+		function nav()
+		{
+			require_once("diseno/nav-2.php");
+		}
 
 	}//fin clase diseño
 
