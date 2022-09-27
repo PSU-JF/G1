@@ -4,8 +4,8 @@
         <div class="menu">
             <a href="#" class="is-active">Inicio</a>
             <a href="pagina/producto.html">Productos</a>
-            <a href="#">Contacto</a>
-            <a href="#">Conocenos</a>
+            <a href="pagina/contacto.html">Contacto</a>
+            <a href="pagina/carrito.html">Carrito</a>
             <a href="pagina/login.php">Iniciar Sesion</a>
         </div>
         <button class="hamburguer">
