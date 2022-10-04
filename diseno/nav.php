@@ -2,7 +2,7 @@
     <div class="contenedor">
         <img src="img/banner.png" alt="" style="width: 250px; height: 90px;">
         <div class="menu">
-            <a href="?clase=pagina&&funcion=home" class="is-active">Inicio</a>
+            <a href="?clase=pagina&&funcion=home" >Inicio</a>
             <a href="?clase=pagina&&funcion=productos" >Productos</a>
             <a href="?clase=pagina&&funcion=contacto">Contacto</a>
             <a href="?clase=pagina&&funcion=carrio">Carrito</a>
