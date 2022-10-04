@@ -11,7 +11,7 @@
         </div>
         <div class="box__footer">
             <h2>Soluciones</h2>
-            <a href="#">App desarrollo</a>
+            <a href="diseno/nav-2.php">App desarrollo</a>
             <a href="#">App markting</a>
             <a href="#">Ios</a>
             <a href="#">Android</a>
