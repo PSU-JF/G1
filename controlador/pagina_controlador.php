@@ -6,6 +6,11 @@
 		{
 			require_once("paginas/index.php" );
 		}
+		function contacto()
+		{
+			require_once("paginas/contacto.php" );
+		}
+
 		
 		function login()
 		{
@@ -13,7 +18,7 @@
 		}
 		function nav()
 		{
-			require_once("diseno/nav-2.php");
+			require_once("diseno/nav.php");
 		}
 
 	}//fin clase diseño
