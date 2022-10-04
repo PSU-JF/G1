@@ -21,7 +21,7 @@ if(isset($_GET['clase']) && isset($_GET['funcion']))
 		switch ($clase)
 		{
 			case 'pagina'://insta
-			$control = new diseno();
+			$control = new Diseno();
 			break;
 		}//fin switch
 
