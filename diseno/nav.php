@@ -5,7 +5,7 @@
             <a href="?clase=pagina&&funcion=home" >Inicio</a>
             <a href="?clase=pagina&&funcion=productos" >Productos</a>
             <a href="?clase=pagina&&funcion=contacto">Contacto</a>
-            <a href="?clase=pagina&&funcion=carrio">Carrito</a>
+            <a href="?clase=pagina&&funcion=carrito">Carrito</a>
             <a href="?clase=pagina&&funcion=login">Iniciar Sesion</a>
         </div>
         <button class="hamburguer">
