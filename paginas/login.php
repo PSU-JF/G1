@@ -1,5 +1,5 @@
 <?php
-require('modelo/logica_empleado.php');
+//require('modelo/logica_empleado.php');
 class Login
 {
     /*function inicio()
@@ -60,41 +60,25 @@ class Login
 </head>
 <body>
 
-<div class="container">
-    <h2>cree un cuenta</h2>
-    <form class="form-horizontal" action="registrar-usuario.php" name="username" required>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="email">usuario</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" maxlength="20" placeholder="Ingresar tu Usuario" name="username" required>
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="card px-5 py-5" id="form1">
+                <div class="form-data" v-if="!submitted">
+                    <div class="forms-inputs mb-4"> <span>Email or username</span> <input autocomplete="off" type="text" v-model="email" v-bind:class="{'form-control':true, 'is-invalid' : !validEmail(email) && emailBlured}" v-on:blur="emailBlured = true">
+                        <div class="invalid-feedback">A valid email is required!</div>
+                    </div>
+                    <div class="forms-inputs mb-4"> <span>Password</span> <input autocomplete="off" type="password" v-model="password" v-bind:class="{'form-control':true, 'is-invalid' : !validPassword(password) && passwordBlured}" v-on:blur="passwordBlured = true">
+                        <div class="invalid-feedback">Password must be 8 character!</div>
+                    </div>
+                    <div class="mb-3"> <button v-on:click.stop.prevent="submit" class="btn btn-dark w-100">Login</button> </div>
+                </div>
+                <div class="success-data" v-else>
+                    <div class="text-center d-flex flex-column"> <i class='bx bxs-badge-check'></i> <span class="text-center fs-1">You have been logged in <br> Successfully</span> </div>
+                </div>
             </div>
         </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Email</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" maxlength="20"
-                id="email" placeholder="Enter Email" name="email" required>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Contraseña</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" maxlength="30"
-                id="pwd" placeholder="Ingresa una Contraseña" name="password" required>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <label><input type="checkbox" name="remember">recordarme</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn.default">crear</button>
-                <button type="button" class="btn btn-defeault" onclick="location.href='login.html'">login</button>
-            </div>
-        </div>
-    </form>
+    </div>
 </div>
     
 </body>
