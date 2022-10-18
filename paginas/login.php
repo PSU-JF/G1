@@ -1,5 +1,5 @@
 <?php
-require('logica/log_empleado.php');
+/*require('logica/log_empleado.php');*/
 class Login
 {
     function inicio()
