@@ -1,5 +1,5 @@
 <?php
-/*require('logica/log_empleado.php');*/
+require('logica/log_empleado.php');
 class Login
 {
     function inicio()
@@ -10,11 +10,11 @@ class Login
     public function reporte_clave()
     {
         /*Instanciar */
-        /*$reporte=new log_empleado(null,null,null,null,null,null);*/
+        $reporte=new log_empleado(null,null,null,null,null,null);
         /*Llamar al formulario principal*/
-        /*$imp=$reporte->reporte_gral();*/
+        $imp=$reporte->reporte_gral();
         //Llamar formulario login inicio
-        /*include("pagina/inicio.php");*/
+        include("pagina/inicio.php");
     }
 
     public function ingreso()
@@ -24,11 +24,11 @@ class Login
         $pass1=$_POST['tx_pass'];
         
         //Instanciar
-        /*$user=new log_empleado(null,$pass1,$usu1,null,null,null);*/
+        $user=new log_empleado(null,$pass1,$usu1,null,null,null);
         /*Esperar respuesta */
-        /*$res1=$user->login_empleado();
+        $res1=$user->login_empleado();
         /*Validar respuesta */
-        /*if ($res1!=1)*/
+        if ($res1!=1)
         {
             echo '<script>
                     alert("USUARIO Y CONTRASEÑA CORRECTOS");
