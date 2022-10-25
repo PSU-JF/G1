@@ -11,8 +11,7 @@ $basedatos= new mysqli( $host , $usuario , $contraseña, $basedatos );
 	
 }
 
-else{
-	
+else{ 
 	
 }
 ?>
